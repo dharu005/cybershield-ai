@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Uploads
+uploads/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Build files
+dist/
+build/
+.output/
+.cache/
+
+# Logs
+*.log
+*url_logs.txt
+
+# IDE
+.vscode/
