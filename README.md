@@ -1,426 +1,245 @@
-\# 🛡️ CyberShield AI
+ <div align="center">
 
-\### Intelligent Multi-Channel Phishing Detection System
+# 🛡️ CyberShield AI
 
+### Intelligent Multi-Channel Phishing Detection System
 
+**Detect. Analyze. Protect.**
 
-CyberShield AI is an AI-powered cybersecurity application designed to detect and prevent phishing threats across multiple communication channels. It analyzes URLs, emails, SMS messages, and USB devices to help users identify potentially malicious activities.
+An AI-powered cybersecurity platform designed to identify phishing threats across URLs, emails, SMS messages, and USB devices.
 
+<br>
 
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![AI](https://img.shields.io/badge/AI-Machine_Learning-00C7B7?style=for-the-badge)
+![Frontend](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![License](https://img.shields.io/badge/Project-Academic-8A2BE2?style=for-the-badge)
 
-The system combines machine learning-based detection, a user-friendly dashboard, scan history, and browser extension support to provide a multi-layered phishing detection solution.
+<br>
 
+**[View Repository](https://github.com/dharu005/cybershield-ai)**
 
+</div>
 
-\---
+---
 
+## 🌐 Overview
 
+CyberShield AI is a multi-channel phishing detection system that uses machine learning to analyze suspicious digital content and help users identify potential cyber threats.
 
-\## 🚀 Key Features
+The platform provides separate scanning modules for URLs, emails, SMS messages, and USB devices, along with a dashboard and scan history to make threat monitoring easier.
 
+## ✨ Key Features
 
+| Feature | Description |
+|---|---|
+| 🔗 URL Detection | Analyzes URLs to identify potentially malicious links |
+| 📧 Email Detection | Classifies email messages as safe or phishing |
+| 💬 SMS Detection | Detects suspicious and fraudulent SMS messages |
+| 💽 USB Threat Scanning | Provides a module for checking USB-related threats |
+| 📊 Dashboard | Displays scan information and statistics |
+| 🕘 Scan History | Keeps track of previous scanning activity |
+| 🌍 Browser Extension | Supports URL checking through a browser extension |
+| 🧠 ML-Based Analysis | Uses trained machine learning models and vectorizers |
 
-\- \*\*URL Phishing Detection:\*\* Analyzes URLs and identifies suspicious or phishing websites.
+---
 
-\- \*\*Email Phishing Detection:\*\* Classifies email messages as legitimate or phishing.
+## 🖥️ Application Preview
 
-\- \*\*SMS Phishing Detection:\*\* Detects suspicious SMS messages and potential smishing attacks.
+### 🏠 Home Page
+<img src="screenshots/home%20page.png" width="100%" alt="CyberShield AI Home Page">
 
-\- \*\*USB Threat Scanning:\*\* Provides a scanning interface for identifying potential USB-related threats.
+### 📊 Dashboard
+<img src="screenshots/dashboard.png" width="100%" alt="Dashboard">
 
-\- \*\*Browser Extension:\*\* Supports browser-based URL monitoring and phishing detection.
+### 🔍 Detection Modules
 
-\- \*\*Dashboard:\*\* Displays security information and scanning statistics.
+<table>
+<tr>
+<td width="50%">
+<h4 align="center">URL Scanner</h4>
+<img src="screenshots/url%20scanner.png" width="100%" alt="URL Scanner">
+</td>
+<td width="50%">
+<h4 align="center">Email Scanner</h4>
+<img src="screenshots/email%20scanner.png" width="100%" alt="Email Scanner">
+</td>
+</tr>
+<tr>
+<td width="50%">
+<h4 align="center">SMS Scanner</h4>
+<img src="screenshots/sms%20scanner.png" width="100%" alt="SMS Scanner">
+</td>
+<td width="50%">
+<h4 align="center">USB Scanner</h4>
+<img src="screenshots/usb%20scanner.png" width="100%" alt="USB Scanner">
+</td>
+</tr>
+</table>
 
-\- \*\*Scan History:\*\* Maintains records of previous scanning activities.
+### 📩 Email & SMS Analysis
 
-\- \*\*Browser URL Logs:\*\* Provides access to browsing URL records.
+<table>
+<tr>
+<td width="50%">
+<img src="screenshots/received%20email.png" width="100%" alt="Received Email">
+<p align="center">Email Analysis</p>
+</td>
+<td width="50%">
+<img src="screenshots/received%20sms.png" width="100%" alt="Received SMS">
+<p align="center">SMS Analysis</p>
+</td>
+</tr>
+</table>
 
+### 🌐 Browser URL Monitoring
+<img src="screenshots/browsed%20url.png" width="100%" alt="Browsed URL">
 
+### 📋 Scan History
+<img src="screenshots/history.png" width="100%" alt="Scan History">
 
-\---
+### ⚙️ Features Overview
+<img src="screenshots/feature%20page.png" width="100%" alt="Features Page">
 
+---
 
+## 🧠 Machine Learning
 
-\## 📸 Project Screenshots
-
-
-
-\### 1. Home Page and Features
-
-
-
-!\[Home Page](screenshots/home%20page.png)
-
-
-
-!\[Feature Page](screenshots/feature%20page.png)
-
-
-
-\### 2. Dashboard
-
-
-
-!\[Dashboard](screenshots/dashboard.png)
-
-
-
-\### 3. URL Phishing Detection
-
-
-
-!\[URL Scanner](screenshots/url%20scanner.png)
-
-
-
-!\[Browsed URL](screenshots/browsed%20url.png)
-
-
-
-\### 4. Email Phishing Detection
-
-
-
-!\[Email Scanner](screenshots/email%20scanner.png)
-
-
-
-!\[Received Email](screenshots/received%20email.png)
-
-
-
-\### 5. SMS Phishing Detection
-
-
-
-!\[SMS Scanner](screenshots/sms%20scanner.png)
-
-
-
-!\[Received SMS](screenshots/received%20sms.png)
-
-
-
-\### 6. USB Threat Scanning
-
-
-
-!\[USB Scanner](screenshots/usb%20scanner.png)
-
-
-
-\### 7. Scan History
-
-
-
-!\[History](screenshots/history.png)
-
-
-
-\---
-
-
-
-\## 🧠 Machine Learning
-
-
-
-CyberShield AI uses trained machine learning models for phishing detection across different input types.
-
-
+CyberShield AI uses trained machine learning models to classify potentially harmful content.
 
 | Detection Module | Model Files |
-
 |---|---|
+| URL | `url_model.pkl`, `url_vectorizer.pkl` |
+| Email | `email_model.pkl`, `email_vectorizer.pkl` |
+| SMS | `sms_model.pkl`, `sms_vectorizer.pkl` |
 
-| URL Detection | URL Model and Vectorizer |
+### Datasets
 
-| Email Detection | Email Model and Vectorizer |
+The project uses datasets for training and evaluating its detection models:
 
-| SMS Detection | SMS Model and Vectorizer |
+- `dataset_phishing.csv` – URL phishing dataset
+- `Phishing_Email.csv` – Email phishing dataset
+- `sms_ds.csv` – SMS dataset
 
+---
 
+## 🛠️ Technology Stack
 
-The trained models and vectorizers are stored in the `backend/models/` directory.
+| Category | Technologies |
+|---|---|
+| Programming Language | Python, JavaScript, TypeScript |
+| Frontend | React |
+| Backend | Flask |
+| Machine Learning | Scikit-learn |
+| Data Processing | Pandas |
+| Database | SQLite |
+| Browser Extension | HTML, CSS, JavaScript |
+| Version Control | Git, GitHub |
 
+---
 
-
-\---
-
-
-
-\## 🛠️ Technology Stack
-
-
-
-\*\*Backend\*\*
-
-\- Python
-
-\- Flask
-
-\- Scikit-learn
-
-\- Pandas
-
-
-
-\*\*Frontend\*\*
-
-\- React
-
-\- TypeScript
-
-\- JavaScript
-
-\- HTML and CSS
-
-
-
-\*\*Machine Learning\*\*
-
-\- TF-IDF Vectorization
-
-\- Classification Models
-
-\- Text and URL Analysis
-
-
-
-\*\*Database and Storage\*\*
-
-\- SQLite (where configured)
-
-\- CSV Datasets
-
-
-
-\*\*Browser Extension\*\*
-
-\- JavaScript
-
-\- Chrome Extension APIs
-
-
-
-\---
-
-
-
-\## 📁 Project Structure
-
-
+## 📁 Project Structure
 
 ```text
-
 CyberShield-AI/
-
 │
-
 ├── backend/
-
 │   ├── app.py
-
 │   ├── dataset/
-
 │   ├── models/
-
 │   └── training/
-
 │
-
 ├── frontend/
-
 │   ├── src/
-
 │   ├── public/
-
 │   └── package.json
-
 │
-
 ├── extension/
-
-│   ├── background.js
-
 │   ├── manifest.json
-
+│   ├── background.js
 │   ├── popup.html
-
 │   └── popup.js
-
 │
-
 ├── screenshots/
-
 │
-
-├── .gitignore
-
-└── README.md
-
+├── README.md
+└── .gitignore
 ```
 
+---
 
+## 🚀 Getting Started
 
-\---
-
-
-
-\## ⚙️ Installation and Execution
-
-
-
-\### 1. Clone the Repository
-
-
+### 1. Clone the Repository
 
 ```bash
-
 git clone https://github.com/dharu005/cybershield-ai.git
+```
 
+### 2. Navigate to the Project
+
+```bash
 cd cybershield-ai
-
 ```
 
+### 3. Run the Backend
 
-
-\### 2. Backend Setup
-
-
-
-Navigate to the backend directory:
-
-
+Open a terminal in the backend directory and install the required dependencies:
 
 ```bash
-
-cd backend
-
+pip install -r requirements.txt
 ```
 
+Start the Flask application using the entry-point configured in your project.
 
-
-Install the Python dependencies required by the backend application, then start the Flask application:
-
-
-
-```bash
-
-python app.py
-
-```
-
-
-
-\### 3. Frontend Setup
-
-
+### 4. Run the Frontend
 
 Open another terminal:
 
-
-
 ```bash
-
 cd frontend
-
 npm install
-
-npm run dev
-
 ```
 
+Start the frontend using the development script configured in `package.json`.
 
+---
 
-Open the local development URL displayed in the terminal.
+## 🎯 Project Objectives
 
+- Identify phishing threats across multiple communication channels.
+- Apply machine learning techniques to cybersecurity.
+- Improve awareness of suspicious links and messages.
+- Provide an accessible interface for threat analysis.
+- Explore browser-based URL monitoring.
 
+## 🔮 Future Enhancements
 
-\### 4. Browser Extension Setup
+- Improve model accuracy through additional training data.
+- Add real-time threat intelligence integration.
+- Enhance browser extension capabilities.
+- Expand threat analysis and reporting.
+- Improve explainability of machine learning predictions.
 
+---
 
+## 👩‍💻 Developed By
 
-1\. Open Google Chrome.
+**Dharani Sundar**
 
-2\. Navigate to `chrome://extensions/`.
+B.E. Computer Science and Engineering  
+Artificial Intelligence and Machine Learning
 
-3\. Enable Developer mode.
+[![GitHub](https://img.shields.io/badge/GitHub-dharu005-181717?style=for-the-badge&logo=github)](https://github.com/dharu005)
 
-4\. Select \*\*Load unpacked\*\*.
+---
 
-5\. Choose the project's `extension` folder.
+<div align="center">
 
+### 🛡️ CyberShield AI
 
+**Securing the Digital World, One Scan at a Time.**
 
-\---
+⭐ If you find this project interesting, consider giving it a star!
 
-
-
-\## 🎯 Project Objective
-
-
-
-The main objective of CyberShield AI is to improve cybersecurity awareness and help users identify phishing threats before interacting with malicious links or messages.
-
-
-
-By integrating multiple detection modules into a single platform, the system provides a centralized approach to phishing detection.
-
-
-
-\---
-
-
-
-\## 🔮 Future Enhancements
-
-
-
-\- Advanced explainable AI integration.
-
-\- Real-time threat intelligence integration.
-
-\- Improved phishing URL detection accuracy.
-
-\- Enhanced browser extension capabilities.
-
-\- Advanced malware analysis and threat reporting.
-
-
-
-\---
-
-
-
-\## 👩‍💻 Developer
-
-
-
-\*\*Dharani Sundar\*\*
-
-
-
-B.E. Computer Science and Engineering (AI \& ML)
-
-
-
-GitHub: \[@dharu005](https://github.com/dharu005)
-
-
-
-\---
-
-
-
-\## ⭐ Support
-
-
-
-If you find this project interesting, consider giving this repository a star!
-
-
-
-\*\*CyberShield AI – Detect. Protect. Stay Secure.\*\*
-
+</div>
